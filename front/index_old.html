@@ -1,0 +1,124 @@
+<!--
+// Implement bootstrap layout
+// Comment field
+// Medication
+// Sleep
+// Loss of control
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ESMr</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" role="main">
+    <br/>
+    <form action="/e" method="post" enctype="multipart/form-data">
+        <div class="input-group">
+            <span class="input-group-addon">UID: </span><input class="form-control" type='text' name='uid' id='uid' placeholder="0000"/>
+        </div>
+        <br/><br/>
+        <label for="cheer">I feel <b>cheerful</b></label><br/>
+        <input name="cheer" id="cheer" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="insecure">I feel <b>insecure</b></label><br/>
+        <input name="insecure" id="insecure" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="relaxed">I feel <b>relaxed?</b></label><br/>
+        <input name="relaxed" id="relaxed" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="annoyed">I feel <b>annoyed?</b></label><br/>
+        <input name="annoyed" id="annoyed" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="satisfied">I feel <b>satisfied?</b></label><br/>
+        <input name="satisfied" id="satisfied" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="lonely">I feel <b>lonely?</b></label><br/>
+        <input name="lonely" id="lonely" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="anxious">I feel <b>anxious?</b></label><br/>
+        <input name="anxious" id="anxious" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="down">I feel <b>down?</b></label><br/>
+        <input name="down" id="down" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="guilty">I feel <b>guilty?</b></label><br/>
+        <input name="guilty" id="guilty" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="actnow">Activity now?</br></label><br/>
+        <select name="actnow" id="actnow">
+            <option value="0">Nothing</option>
+            <option value="1">Resting</option>
+            <option value="2">Work</option>
+            <option value="3">Study</option>
+            <option value="4">Household</option>
+            <option value="5">Sports</option>
+            <option value="6">Hobby</option>
+            <option value="7">Leisure</option>
+            <option value="8">Eating</option>
+            <option value="9">Other</option>
+        </select>
+        <br/><br/>
+        <label for="actbef">Activity before this?</b></label><br/>
+        <select name="actbef" id="actbef">
+            <option value="0">Nothing</option>
+            <option value="1">Resting</option>
+            <option value="2">Work</option>
+            <option value="3">Study</option>
+            <option value="4">Household</option>
+            <option value="5">Sports</option>
+            <option value="6">Hobby</option>
+            <option value="7">Leisure</option>
+            <option value="8">Eating</option>
+            <option value="9">Other</option>
+        </select>
+        <br/><br/>
+        <label for="else">I would rather be doing <b>something else?</b></label><br/>
+        <input name="else" id="else" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="where">Where am I?</b></label><br/>
+        <select name="where" id="where">
+            <option value="0">At home</option>
+            <option value="1">At family or friend's place</option>
+            <option value="2">At work</option>
+            <option value="3">At school</option>
+            <option value="4">Public place</option>
+            <option value="5">Transport</option>
+            <option value="6">Nature</option>
+            <option value="7">Other</option>
+        </select>
+        <br/><br/>
+        <label for="place">I don't feel on my <b>place here</b></label><br/>
+        <input name="place" id="place" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="who">With who?</b></label><br/>
+        <select name="who" id="who">
+            <option value="0">Nobody</option>
+            <option value="1">Partner</option>
+            <option value="2">Family resident</option>
+            <option value="3">Family non-resident</option>
+            <option value="4">Non-family resident</option>
+            <option value="5">Friends</option>
+            <option value="6">Colleagues</option>
+            <option value="7">Acquaintances</option>
+            <option value="8">Strangers or others</option>
+        </select>
+        <br/><br/>
+        <label for="hungry">I am <b>hungry</b></label><br/>
+        <input name="hungry" id="hungry" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="tired">I am <b>tired</b></label><br/>
+        <input name="tired" id="tired" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <label for="inpain">I am <b>in pain</b></label><br/>
+        <input name="inpain" id="inpain" type="range" min="0" max="50" value="25" />
+        <br/><br/>
+        <input type="submit" value="Send" />
+    </form>
+</div>
+</body>
+</html>

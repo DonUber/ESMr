@@ -1,0 +1,36 @@
+<!--
+// Comment field
+// Sleep
+// Loss of control
+-->
+<br/>
+<h1>ESMr</h1>
+<p>Psychiatric experience sampling</p>
+<p>
+
+</p>
+<hr/>
+<form action="/e" method="post" enctype="multipart/form-data">
+    {{ for(var field in it.fields){}}
+    {{? it.fields[field].type == 'range'}}
+    <label for="{{=field}}">{{=it.fields[field].label}}</label><br/>
+    <input name="{{=field}}" id="{{=field}}" type="range" min="it.fields[field].min" max="{{=it.fields[field].max}}" value="{{=it.fields[field].val}}" />
+    <br/><br/>
+    {{ } }}
+    {{? it.fields[field].type == 'text'}}
+    <div class="input-group">
+        <span class="input-group-addon">{{=it.fields[field].label}}: </span><input class="form-control" type='text' name='{{=field}}' id='{{=field}}' placeholder="{{=it.fields[field].val}}"/>
+    </div><br/><br/>
+    {{ } }}
+    {{? it.fields[field].type == 'select'}}
+    <label for="{{=field}}">{{=it.fields[field].label}}</br></label><br/>
+    <select name="{{=field}}" id="{{=field}}">
+        {{ for(var option in it.fields[field].options){}}
+        <option value="{{=option}}">{{=it.fields[field].options[option]}}</option>
+        {{ } }}
+    </select>
+    <br/><br/>
+    {{ } }}
+    {{ } }}
+    <input class="btn btn-success" type="submit" value="Send" />
+</form>

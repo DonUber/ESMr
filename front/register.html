@@ -1,0 +1,11 @@
+<h1>New User</h1>
+<p>Some info about yourself - The email address is necessary to send the beeps</p>
+<hr/>
+<form action="/confirm" method="post" enctype="multipart/form-data">
+    {{ for(var field in it.register_fields){}}
+    <div class="input-group">
+        <span class="input-group-addon">{{=it.register_fields[field].label}}: </span><input class="form-control" type='text' name='{{=field}}' id='{{=field}}' placeholder="{{=it.register_fields[field].val}}"/>
+    </div><br/><br/>
+    {{ } }}
+    <input class="btn btn-success" type="submit" value="Send" />
+</form>

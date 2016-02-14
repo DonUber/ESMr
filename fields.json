@@ -1,0 +1,178 @@
+{
+  "fields": {
+    "uid": {
+      "label": "UID",
+      "type": "text",
+      "val": "0000",
+      "newpoint": 0
+    },
+    "cheer": {
+      "label": "I feel cheerful",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "insecure": {
+      "label": "I feel insecure",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "relaxed": {
+      "label": "I feel relaxed",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "annoyed": {
+      "label": "I feel annoyed",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "satisfied": {
+      "label": "I feel satisfied",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "lonely": {
+      "label": "I feel lonely",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "down": {
+      "label": "I feel down",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "anxious": {
+      "label": "I feel anxious",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "guilty": {
+      "label": "I feel guilty",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "actnow": {
+      "label": "What is your activity now?",
+      "type": "select",
+      "options": ["Nothing", "Work", "Resting", "Sports", "Hobby", "Games", "Study", "Household", "Eating", "Other"],
+      "newpoint": 1
+    },
+    "actbef": {
+      "label": "What was your activity before this?",
+      "type": "select",
+      "options": ["Nothing", "Work", "Resting", "Sports", "Hobby", "Games", "Study", "Household", "Eating", "Other"],
+      "newpoint": 1
+    },
+    "who": {
+      "label": "Who was with you?",
+      "type": "select",
+      "options": ["Nobody", "Family resident(s)", "Non-resident family", "Resident", "Friends", "Acquintances", "Colleagues", "Strangers", "Partner"],
+      "newpoint": 1
+    },
+    "where": {
+      "label": "Where were you?",
+      "type": "select",
+      "options": ["At home", "At school", "At work", "Friends place", "Family's plave", "Public transport", "On the street", "In town", "Nature", "Public place", "Other"],
+      "newpoint": 1
+    },
+    "inpain": {
+      "label": "I am in pain",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "hungry": {
+      "label": "I am hungry",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "tired": {
+      "label": "I am tired",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "losscontrol": {
+      "label": "I feel like I have lost control over myself",
+      "type": "range",
+      "min": 0,
+      "max": 50,
+      "val": 25,
+      "newpoint": 1
+    },
+    "substances": {
+      "label": "Substances",
+      "type": "text",
+      "val": "e.g. Cafeine, Antidepressants, Antipsychotics, Alcohol",
+      "newpoint": 1
+    },
+    "physical": {
+      "label": "Health Problems",
+      "type": "text",
+      "val": "e.g. Coughing, Insomnia, Fever etc.",
+      "newpoint": 1
+    },
+    "comments": {
+      "label": "Comments",
+      "type": "text",
+      "val": "e.g. On holiday in Spain, family member died, birthday",
+      "newpoint": 1
+    }
+  },
+  "register_fields": {
+    "lfname": {
+      "label": "Name",
+      "val": "John Doe"
+    },
+    "age": {
+      "label": "Birthday",
+      "val": "dd-mm-yyyy"
+    },
+    "email": {
+      "label": "E-mail",
+      "val": "johndoe@mail.com"
+    },
+    "sex": {
+      "label": "Sex",
+      "val": "M/V"
+    },
+    "disorder": {
+      "label": "Diagnosed with a specific psychiatric disorder? (leave blank if not applicable)",
+      "val": "e.g. Bipolar disorder, Austism"
+    }
+  }
+}
